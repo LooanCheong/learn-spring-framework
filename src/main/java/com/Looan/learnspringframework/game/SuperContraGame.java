@@ -1,15 +1,15 @@
 package com.Looan.learnspringframework.game;
 
-public class MarioGame implements GamingConsole {
+public class SuperContraGame implements GamingConsole {
 
 	@Override
 	public void up() {
-		System.out.println("Jump");
+		System.out.println("Up");
 	}
 
 	@Override
 	public void down() {
-		System.out.println("Slide");
+		System.out.println("Down");
 	}
 
 	@Override

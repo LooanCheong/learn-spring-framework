@@ -1,24 +1,29 @@
 package com.Looan.learnspringframework.game;
 
-public class MarioGame implements GamingConsole {
+public class PacmanGame implements GamingConsole {
 
 	@Override
 	public void up() {
-		System.out.println("Jump");
+		System.out.println("Up Side");
+
 	}
 
 	@Override
 	public void down() {
-		System.out.println("Slide");
+		System.out.println("Down Side");
+
 	}
 
 	@Override
 	public void left() {
-		System.out.println("Left");
+		System.out.println("Left Side");
+
 	}
 
 	@Override
 	public void right() {
-		System.out.println("Right");
+		System.out.println("Right Side");
+
 	}
+
 }
