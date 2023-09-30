@@ -1,9 +1,9 @@
 package com.Looan.learnspringframework.game;
 
-public class gameRunner {
+public class GameRunner {
 	private GamingConsole game;
 
-	public gameRunner(GamingConsole game) {
+	public GameRunner(GamingConsole game) {
 		this.game = game;
 	}
 

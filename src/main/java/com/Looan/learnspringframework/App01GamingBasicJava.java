@@ -1,7 +1,7 @@
 package com.Looan.learnspringframework;
 
 import com.Looan.learnspringframework.game.PacmanGame;
-import com.Looan.learnspringframework.game.gameRunner;
+import com.Looan.learnspringframework.game.GameRunner;
 
 public class App01GamingBasicJava {
 
@@ -10,7 +10,7 @@ public class App01GamingBasicJava {
 		// var game = new MarioGame();
 		// var game = new SuperContraGame();
 		var game = new PacmanGame();
-		var gameRunner = new gameRunner(game);
+		var gameRunner = new GameRunner(game);
 		gameRunner.run();
 
 	}
