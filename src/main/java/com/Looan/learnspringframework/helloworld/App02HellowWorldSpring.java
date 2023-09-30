@@ -1,4 +1,4 @@
-package com.Looan.learnspringframework;
+package com.Looan.learnspringframework.helloworld;
 
 import java.util.Arrays;
 
