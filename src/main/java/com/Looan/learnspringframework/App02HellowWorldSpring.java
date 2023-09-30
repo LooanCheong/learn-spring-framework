@@ -1,5 +1,7 @@
 package com.Looan.learnspringframework;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App02HellowWorldSpring {
@@ -20,5 +22,6 @@ public class App02HellowWorldSpring {
 		System.out.println(context.getBean("address2"));
 		System.out.println(context.getBean(Address.class));
 
+		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 	}
 }
