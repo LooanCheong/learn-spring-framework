@@ -3,7 +3,7 @@ package com.Looan.learnspringframework;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-record Person(String name, int age) {
+record Person(String name, int age, Address address) {
 };
 
 record Address(String firtsLine, String city) {
@@ -24,10 +24,20 @@ public class HelloWorldConfiguration {
 
 	@Bean
 	public Person person() {
-		return new Person("Jun", 24);
+		return new Person("Jun", 24, new Address("Wolgok", "Seoul"));
 	}
 
-	@Bean
+	@Bean(name = "person2")
+	public Person person2MethodCall(String name, int age, Address address2) {
+		return new Person(name, age, address2);
+	}
+
+	@Bean(name = "person3")
+	public Person person3Parameters() {
+		return new Person(name(), age(), address());
+	}
+
+	@Bean(name = "address2")
 	public Address address() {
 		return new Address("Hawolgok", "Seoul");
 	}
