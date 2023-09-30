@@ -3,7 +3,7 @@ package com.Looan.learnspringframework;
 import com.Looan.learnspringframework.game.PacmanGame;
 import com.Looan.learnspringframework.game.gameRunner;
 
-public class AppGamingBasicJava {
+public class App01GamingBasicJava {
 
 	public static void main(String[] args) {
 
