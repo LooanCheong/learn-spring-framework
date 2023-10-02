@@ -1,18 +1,15 @@
-package com.Looan.learnspringframework;
+package com.Looan.learnspringframework.game;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.Looan.learnspringframework.game.GameRunner;
-import com.Looan.learnspringframework.game.GamingConsole;
-
 @Configuration
 @ComponentScan("com.Looan.learnspringframework.game")
-public class GaminpAppLauncherApplication {
+public class GamingAppLauncherApplication {
 
 	public static void main(String[] args) {
-		try (var context = new AnnotationConfigApplicationContext(GaminpAppLauncherApplication.class)) {
+		try (var context = new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class)) {
 
 			context.getBean(GamingConsole.class).up();
 
